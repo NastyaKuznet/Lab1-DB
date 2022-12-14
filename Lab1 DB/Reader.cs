@@ -33,7 +33,7 @@ namespace Lab1_DB
                 $"Книга {book.Name} взята на чтение {DateTake[book.Id].ToString("d")} и возвращена в библиотеку {DateReturn[book.Id].ToString("d")}.";
             else
                 return $"{Id}. Полное имя читателя {FullName}. Номер читательского билета {NumberReaderTiсket}.\n" +
-                    $"Данный читатель не брал книгу {Id}. {book.FullNameWriter} - {book.Name}";
+                    $"Данный читатель не брал книгу {book.FullNameWriter} - {book.Name}";
         }
         public static string ToString(Reader[] readers, Book book)
         {
