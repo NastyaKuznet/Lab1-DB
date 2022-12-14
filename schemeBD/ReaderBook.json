@@ -1,0 +1,27 @@
+{
+  "name": "ReaderBook",
+  "columns": [
+    {
+      "name": "readerId",
+      "type": "int",
+      "referencedTable": "Reader",
+      "isPrimary": true
+    },
+    {
+      "name": "bookId",
+      "type": "int",
+      "referencedTable": "Book",
+      "isPrimary": true
+    },
+    {
+      "name": "dateTake",
+      "type": "datatime",
+      "isPrimary": false
+    },
+    {
+      "name": "dateReturn",
+      "type": "datatime",
+      "isPrimary": false
+    }
+  ]
+}
